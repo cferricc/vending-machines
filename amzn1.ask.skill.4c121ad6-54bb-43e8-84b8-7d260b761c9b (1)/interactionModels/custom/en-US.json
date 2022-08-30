@@ -1,0 +1,98 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "vending machine transactions",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "QuestionIntent",
+          "slots": [
+            {
+              "name": "transactions",
+              "type": "transactions"
+            }
+          ],
+          "samples": [
+            "how many vending machine {transactions} did we have this month"
+          ]
+        },
+        {
+          "name": "NormalIntent",
+          "slots": [
+            {
+              "name": "normal",
+              "type": "normal"
+            }
+          ],
+          "samples": [
+            "is it {normal}"
+          ]
+        },
+        {
+          "name": "WorryIntent",
+          "slots": [
+            {
+              "name": "worry",
+              "type": "worry"
+            }
+          ],
+          "samples": [
+            "should i {worry}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "over 1 billion customers transactions"
+              }
+            }
+          ],
+          "name": "transactions"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Monthly yes but the volume of transactions in the last hour represents a decline of 6% when compared to this time last week."
+              }
+            }
+          ],
+          "name": "normal"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "You should focus on the airports in Massachusetts and Alabama."
+              }
+            }
+          ],
+          "name": "worry"
+        }
+      ]
+    }
+  },
+  "version": "10"
+}
